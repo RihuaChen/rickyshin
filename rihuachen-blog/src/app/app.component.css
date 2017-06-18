@@ -1,6 +1,8 @@
-body {
-  padding: 0;
-  margin: 0;
+.body {
+  height: 100vh;
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fffcdc, #0D5882);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fffcdc, #0D5882); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .container {
@@ -20,7 +22,7 @@ body {
 
 .menu-bar {
   padding-top: .36rem;
-  height: 100px;
+  height: 60px;
   width: 70%;
   display: flex;
 }
@@ -39,12 +41,19 @@ body {
   font-weight: 300;
 }
 
-.menu-bar li:nth-child(1) a {
+.menu-bar li a:active {
   color: #93FAFF;
   border-top: 2px solid #93FAFF;
 }
 
 .menu-bar li a:hover {
+  cursor: pointer;
   color: #93FAFF;
   border-top: 2px solid #93FAFF;
 }
+
+.active-link {
+  color: #93FAFF !important;
+  border-top: 2px solid #93FAFF;
+}
+

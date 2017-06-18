@@ -1,0 +1,15 @@
+$font-title: 24px;
+$font16: 16px;
+$white: #fff;
+.about-me-wrapper {
+  margin: .36rem;
+  padding: .24rem;
+  background-color: $white;
+}
+.title {
+  font-size: $font-title;
+}
+
+p {
+  font-size: $font16;
+}
